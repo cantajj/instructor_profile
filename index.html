@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전정호 강사 프로파일 | AI·데이터분석·비즈니스 도메인 전문가</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Poppins:wght@400;600;700&display=swap');
+
+        :root {
+            --primary: #1e40af;
+            /* Blue 800 */
+            --secondary: #3b82f6;
+            /* Blue 500 */
+            --dark: #0f172a;
+            /* Slate 900 */
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.05), 0 8px 10px -6px rgb(0 0 0 / 0.05);
+        }
+
+        .track-header {
+            border-left: 4px solid var(--secondary);
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-900 tracking-tight flex items-center">
+                <span>전정호</span>
+                <span class="text-blue-600 ml-2 text-sm font-medium border-l border-slate-200 pl-2">강사 프로파일</span>
+            </div>
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-600">
+                <a href="#home" class="hover:text-blue-600 transition">홈</a>
+                <a href="#stats" class="hover:text-blue-600 transition">핵심지표</a>
+                <a href="#method" class="hover:text-blue-600 transition">교육철학</a>
+                <a href="#teaching" class="hover:text-blue-600 transition">강의포트폴리오</a>
+                <a href="#experience" class="hover:text-blue-600 transition">실무경력</a>
+                <a href="#contact" class="hover:text-blue-600 transition">연락처</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-44 pb-24 px-6 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto">
+            <!-- Full Width Title Block (Adjusted Font Sizes) -->
+            <div class="w-full mb-12 text-center md:text-left">
+                <div
+                    class="inline-block px-4 py-1.5 bg-blue-50 text-blue-700 text-xs font-bold rounded-full uppercase tracking-widest mb-6">
+                    Bridging Theory to Business Value
+                </div>
+                <h2 class="text-slate-400 font-light text-xl md:text-2xl tracking-tight mb-4 italic">전정호 강사 전문 프로파일</h2>
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold leading-[1.3] text-slate-900">
+                    기술의 언어를 비즈니스 가치로 번역하는<br>
+                    <span class="gradient-text">실전 AI 교육의 기준</span>을 제시합니다.
+                </h1>
+            </div>
+
+            <!-- Content Row: Description (Left) + Academic Card (Right - Enlarged) -->
+            <div class="flex flex-col md:flex-row gap-8 lg:gap-16 items-start md:items-stretch">
+                <!-- Detailed Description (Left) -->
+                <div class="md:w-3/5 space-y-8 flex flex-col justify-center">
+                    <p class="text-lg md:text-xl text-slate-600 leading-relaxed text-justify md:text-left">
+                        단순한 지식 전달을 넘어, <strong>최신의 기술 용어를 정확히 이해</strong>하는 것에서 시작합니다.
+                        여기에 비즈니스 도메인에 적용할 수 있는 <strong>창의성</strong>을 개발하여,
+                        현장의 복잡한 과제를 스스로 해결할 수 있는 <span
+                            class="text-slate-900 font-semibold underline decoration-blue-400 decoration-2 underline-offset-4">강력한
+                            문제 해결 능력</span>을 갖추는 교육을 지향합니다.
+                    </p>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#teaching"
+                            class="px-8 py-4 bg-blue-700 text-white rounded-2xl font-bold hover:bg-blue-800 transition shadow-xl shadow-blue-200">주요
+                            강의 이력 확인</a>
+                        <a href="#contact"
+                            class="px-8 py-4 bg-white border border-slate-200 rounded-2xl font-bold hover:bg-slate-50 transition">협업
+                            및 강의 문의</a>
+                    </div>
+                </div>
+
+                <!-- Academic Excellence Card (Right - Bigger and Bolder) -->
+                <div class="md:w-2/5 w-full">
+                    <div
+                        class="w-full h-full min-h-[240px] bg-slate-50 rounded-[2.5rem] overflow-hidden shadow-md relative border border-slate-200 group hover:shadow-xl transition-all duration-500 flex flex-col justify-center px-10 py-12">
+                        <div
+                            class="absolute top-[-20px] right-[-20px] opacity-10 group-hover:rotate-12 transition-transform duration-700">
+                            <i class="fa-solid fa-graduation-cap text-blue-900 text-[12rem]"></i>
+                        </div>
+                        <div class="relative z-10 space-y-4">
+                            <div
+                                class="inline-flex items-center gap-2 px-3 py-1 bg-white rounded-full text-[11px] font-bold text-blue-600 shadow-sm border border-blue-50 uppercase tracking-widest font-poppins">
+                                <span class="w-2 h-2 bg-blue-600 rounded-full animate-pulse"></span> Academic Excellence
+                            </div>
+                            <div class="space-y-1">
+                                <h3 class="text-2xl font-black text-slate-800 leading-tight">고려대학교 수학과 <span
+                                        class="text-blue-600 font-light italic">학사</span></h3>
+                                <h3 class="text-2xl font-black text-slate-800 leading-tight">Strategic Global MBA <span
+                                        class="text-blue-600 font-light italic text-xl">석사</span></h3>
+                            </div>
+                            <div class="pt-4 border-t border-slate-200">
+                                <p class="text-xs text-slate-500 font-medium leading-relaxed">탄탄한 수리적 원리 기반의 알고리즘
+                                    교육과<br>비즈니스 전략 통찰이 결합된 독보적 전문성</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Stats Section -->
+    <section id="stats" class="py-16 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="space-y-2">
+                    <div class="text-4xl md:text-5xl font-bold font-poppins text-blue-400">15+</div>
+                    <div class="text-slate-400 text-xs font-medium uppercase tracking-widest">강의 경력 (년)</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl md:text-5xl font-bold font-poppins text-blue-400">4,500+</div>
+                    <div class="text-slate-400 text-xs font-medium uppercase tracking-widest">누적 강의 시간</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl md:text-5xl font-bold font-poppins text-blue-400">5+</div>
+                    <div class="text-slate-400 text-xs font-medium uppercase tracking-widest">AI 집중 전문성 (년)</div>
+                </div>
+                <div class="space-y-2">
+                    <div class="text-4xl md:text-5xl font-bold font-poppins text-blue-400">100%</div>
+                    <div class="text-slate-400 text-xs font-medium uppercase tracking-widest">현장 실무 중심</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Methodology Section -->
+    <section id="method" class="py-24 bg-white border-y border-slate-100 px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <h2 class="text-3xl font-bold text-slate-900 section-title">대상에 최적화된 맞춤형 강의 솔루션</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-start">
+                        <div
+                            class="w-12 h-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-book-open"></i></div>
+                        <div>
+                            <h4
+                                class="font-bold text-lg text-slate-800 underline decoration-blue-200 decoration-4 underline-offset-4 mb-2">
+                                최신 기술의 정확한 해설</h4>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">비전공자도 AI의 블랙박스를 열어볼 수 있도록,
+                                수학적 본질을 구조적으로 분해하여 가장 명쾌한 언어로 전달합니다. 모호한 기술 용어를 정확한 개념으로 정립해 드립니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div
+                            class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-2xl flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i></div>
+                        <div>
+                            <h4
+                                class="font-bold text-lg text-slate-800 underline decoration-indigo-200 decoration-4 underline-offset-4 mb-2">
+                                도메인 적용을 위한 창의성 개발</h4>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">Global MBA의 비즈니스 시각을 통해, 습득한
+                                기술을 자신의 도메인(제조, 서비스, 금융 등)에 어떻게 창의적으로 접목할지 실질적인 프로젝트 시나리오를 제시합니다.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div
+                            class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-puzzle-piece"></i></div>
+                        <div>
+                            <h4
+                                class="font-bold text-lg text-slate-800 underline decoration-emerald-200 decoration-4 underline-offset-4 mb-2">
+                                실전적 문제 해결 능력 완성</h4>
+                            <p class="text-sm text-slate-500 leading-relaxed text-justify">다년간 축적된 산업 현장의 노하우를 바탕으로,
+                                전공자들에게는 날카로운 최적화 기법과 실무 아키텍처 설계를 교육하여 현업의 문제를 실제로 해결하도록 지도합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div
+                    class="bg-slate-50 p-10 rounded-[2.5rem] text-center flex flex-col justify-center border border-slate-100">
+                    <div class="text-blue-600 font-bold text-xs mb-2 font-poppins uppercase tracking-widest">Student
+                        Score</div>
+                    <div class="text-4xl font-black text-slate-900 italic font-poppins tracking-tighter">Excellent</div>
+                </div>
+                <div
+                    class="bg-blue-600 p-10 rounded-[2.5rem] text-center text-white shadow-2xl shadow-blue-100 flex flex-col justify-center">
+                    <div class="text-blue-200 font-bold text-xs mb-2 font-poppins uppercase tracking-widest">
+                        Practicality</div>
+                    <div class="text-4xl font-black italic font-poppins tracking-tighter">Advanced</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Portfolio Section -->
+    <section id="teaching" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center md:text-left mb-20">
+                <h2 class="text-4xl font-bold text-slate-900 section-title">전문 강의 포트폴리오</h2>
+                <p class="text-slate-500 text-lg">최신 AI 언어 마스터부터 부트캠프까지, 검증된 주요 교육 실적입니다.</p>
+            </div>
+
+            <!-- Track 1: K-Digital Training -->
+            <div class="mb-24">
+                <div class="track-header mb-8">
+                    <h3 class="text-2xl font-bold text-slate-800">K-디지털 트레이닝 <span
+                            class="text-blue-600 font-normal text-lg ml-2 font-poppins">Government Program</span></h3>
+                    <p class="text-slate-500 text-sm mt-1">실무 역량 강화 및 취업 중심의 장기 집중 교육 과정 (다수 수행)</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase">휴먼
+                                AI 교육센터</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2025.12 ~ Present</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-4 leading-tight text-slate-800 font-poppins">심화 데이터 분석 기반<br>서비스
+                            솔루션 개발자 과정</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">RAG 시스템, LangChain, NoSQL(MongoDB), Docker
+                            기반 서비스 배포 및 Tableau 시각화 지도</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase">휴먼
+                                IT 교육센터</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2025.08 - 2025.11</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-4 leading-tight text-slate-800">AI 서비스 기반 웹 개발자<br>심화 프로젝트</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">Django REST Framework, CNN/전이학습 AI 모델,
+                            YOLO 실시간 객체 검출 모델 구현 기술 전수</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase">메디치교육센터</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2025.01 - 2025.07</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-4 leading-tight text-slate-800">빅데이터 기반 컴퓨터비전(CV)<br>데이터사이언스 과정
+                        </h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">948시간 부트캠프 교육. OpenCV 영상 처리 알고리즘 및 딥러닝 산업
+                            모델 구현 기술 지도</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase">메디치교육센터</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2024.04 - 2024.12</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-4 leading-tight text-slate-800">비즈니스 데이터 애널리스트<br>양성 과정</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">R/Python 기반 비즈니스 통계 분석 및 실제 공공/민간 데이터를 활용한
+                            도메인 분석 프로젝트 지도</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase">두드림컴퓨터아카데미</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2023.06 - 2023.10</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-4 leading-tight text-slate-800">영상지능 기반 AI 전문가<br>양성 과정</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">YOLO 객체 검출(포트홀, 질병 검출), 생성형 AI 활용 등 실전
+                            프로젝트 중심 현장 기술 전수</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-bold rounded uppercase">멀티캠퍼스</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2022.09 - 2023.02</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-4 leading-tight text-slate-800">서비스 산업 데이터분석가<br>취업 캠프</h4>
+                        <p class="text-[11px] text-slate-500 leading-relaxed">자연어 처리(Transformer, GPT), Python 통계 역량 강화,
+                            수강생 만족도 4.6/5.0 달성 실적</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 2: ICT Innovation -->
+            <div class="mb-24">
+                <div class="track-header mb-8">
+                    <h3 class="text-2xl font-bold text-slate-800">ICT 이노베이션 스퀘어 & 전문기관 <span
+                            class="text-indigo-600 font-normal text-lg ml-2 font-poppins">Specialized Course</span></h3>
+                    <p class="text-slate-500 text-sm mt-1">현업자 재교육 및 전공자 대상의 고도화된 AI 데이터 분석 교육</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-indigo-50 text-indigo-600 text-[10px] font-bold rounded uppercase">구름
+                                (goorm)</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2024 - 2025 (2회)</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-3 text-slate-800">올인원 Pass! 인공지능 언어 마스터</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed text-justify">최신 LLM 트렌드 및 RNN/Transformer
+                            아키텍처 분석, LangChain 활용 RAG 시스템 구축 실무 교육</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-indigo-50 text-indigo-600 text-[10px] font-bold rounded uppercase">멋쟁이사자처럼</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2021.09 - 2021.11</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-3 text-slate-800">인공지능 중고급 프로젝트 과정</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed text-justify">현업 개발자 대상 심화 머신러닝/딥러닝 알고리즘
+                            최적화 및 파이썬 대규모 데이터 엔지니어링 강의</p>
+                    </div>
+                    <div class="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm card-hover transition-all">
+                        <div class="flex justify-between items-start mb-4">
+                            <span
+                                class="px-2 py-0.5 bg-indigo-50 text-indigo-600 text-[10px] font-bold rounded uppercase">아시아경제
+                                교육센터</span>
+                            <span class="text-slate-400 text-[11px] font-medium font-poppins">2020.08 - 2020.10</span>
+                        </div>
+                        <h4 class="text-lg font-bold mb-3 text-slate-800">자연어처리(NLP) 전문가 양성</h4>
+                        <p class="text-[11px] text-slate-600 leading-relaxed text-justify">청년취업아카데미 수행. 딥러닝 기반 텍스트 분석 및
+                            실전 감성 분석 모델링 등 집중 교육</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Track 3: B2B & Academic -->
+            <div>
+                <div class="track-header mb-8">
+                    <h3 class="text-2xl font-bold text-slate-800">기업체 특강 및 대학 교육 <span
+                            class="text-emerald-600 font-normal text-lg ml-2 font-poppins">Industry Collaboration</span>
+                    </h3>
+                    <p class="text-slate-500 text-sm mt-1">조직의 성공적인 디지털 전환(DX)을 돕는 가치 기반 맞춤형 교육</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-10 rounded-3xl border border-slate-100 shadow-sm flex items-start gap-8">
+                        <div class="hidden sm:flex p-5 bg-emerald-50 rounded-2xl text-emerald-600"><i
+                                class="fa-solid fa-building-circle-check text-2xl"></i></div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-4 text-slate-800">기업 현장 교육</h4>
+                            <ul class="text-[13px] text-slate-600 space-y-3">
+                                <li class="flex items-center"><i
+                                        class="fa-solid fa-minus text-emerald-500 mr-2 text-[8px]"></i>
+                                    <strong>엠코테크놀로지코리아:</strong> 생성형 AI 활용 및 DX/DT 생존 전략 특강</li>
+                                <li class="flex items-center"><i
+                                        class="fa-solid fa-minus text-emerald-500 mr-2 text-[8px]"></i>
+                                    <strong>삼성SDS:</strong> 우수 협력사 임직원 대상 정보화 핵심 역량 및 IT 교육</li>
+                                <li class="flex items-center"><i
+                                        class="fa-solid fa-minus text-emerald-500 mr-2 text-[8px]"></i>
+                                    <strong>감사연구소:</strong> 생성형 AI(ChatGPT) 활용 실무 프로세스 자동화 특강</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white p-10 rounded-3xl border border-slate-100 shadow-sm flex items-start gap-8">
+                        <div class="hidden sm:flex p-5 bg-emerald-50 rounded-2xl text-emerald-600"><i
+                                class="fa-solid fa-user-graduate text-2xl"></i></div>
+                        <div>
+                            <h4 class="text-xl font-bold mb-4 text-slate-800">아카데믹 파트너십</h4>
+                            <ul class="text-[13px] text-slate-600 space-y-3">
+                                <li class="flex items-center"><i
+                                        class="fa-solid fa-minus text-emerald-500 mr-2 text-[8px]"></i>
+                                    <strong>한양대학교:</strong> 창업교육센터 대상 인공지능 기반 비즈니스 창의성 특강</li>
+                                <li class="flex items-center"><i
+                                        class="fa-solid fa-minus text-emerald-500 mr-2 text-[8px]"></i>
+                                    <strong>전남대학교:</strong> 인공지능 입문 및 수리적 기초 알고리즘 실무 과정 수행</li>
+                                <li class="flex items-center"><i
+                                        class="fa-solid fa-minus text-emerald-500 mr-2 text-[8px]"></i>
+                                    <strong>광주SW마이스터고:</strong> 예비 개발자 대상 AI 기초 및 프로젝트 멘토링</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Timeline -->
+    <section id="experience" class="py-24 px-6 bg-white overflow-hidden border-t border-slate-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-slate-900 section-title">산업 도메인 실무 이력</h2>
+            <div class="relative mt-20">
+                <div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-slate-200 hidden md:block"></div>
+
+                <!-- Exp 1 -->
+                <div class="relative flex flex-col md:flex-row gap-8 mb-16">
+                    <div class="md:w-1/2 md:text-right">
+                        <div class="md:pr-12">
+                            <span class="text-blue-600 font-poppins font-bold tracking-widest text-lg italic">LEADER /
+                                CONSULTANT</span>
+                            <h3 class="text-2xl font-bold mt-2 text-slate-800">L&S ai (엘앤에스 에이아이)</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mt-4 text-slate-500">인공지능 도입 전략 및 데이터 분석
+                                컨설팅 총괄. 스마트팜 및 IoT 조명 시스템 분야의 도메인 특화 AI 솔루션 자문 수행 및 비즈니스 모델링 전문가.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute left-[-9px] md:left-1/2 md:ml-[-10px] top-1 w-5 h-5 bg-blue-600 rounded-full border-4 border-white shadow-sm z-10">
+                    </div>
+                    <div class="md:w-1/2"></div>
+                </div>
+
+                <!-- Exp 2 -->
+                <div class="relative flex flex-col md:flex-row-reverse gap-8 mb-16">
+                    <div class="md:w-1/2">
+                        <div class="md:pl-12">
+                            <span class="text-slate-400 font-poppins font-bold tracking-widest text-lg italic">DIRECTOR
+                                / R&D</span>
+                            <h3 class="text-2xl font-bold mt-2 text-slate-800">㈜삼립</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mt-4 text-slate-500">기업부설연구소장. 아날로그 전통 제조
+                                환경에서 지능형 디지털 조명 시스템으로의 전환 주도. 다수의 특허 보유 및 조달 우수제품 인증 성과 확보.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute left-[-9px] md:left-1/2 md:ml-[-10px] top-1 w-5 h-5 bg-slate-200 rounded-full border-4 border-white shadow-sm z-10">
+                    </div>
+                    <div class="md:w-1/2"></div>
+                </div>
+
+                <!-- Exp 3 -->
+                <div class="relative flex flex-col md:flex-row gap-8 mb-16">
+                    <div class="md:w-1/2 md:text-right">
+                        <div class="md:pr-12">
+                            <span class="text-slate-400 font-poppins font-bold tracking-widest text-lg italic">ENGINEER
+                                / INSTRUCTOR</span>
+                            <h3 class="text-2xl font-bold mt-2 text-slate-800">삼성SDS</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mt-4 text-slate-500">삼성물산 건설부문 IS실 전임.
+                                통합구매/외주관리 시스템 설계 및 개발. 삼성 건설 계열사 및 우수 협력사 대상 IT 전문 교육 담당 사내강사 활동.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute left-[-9px] md:left-1/2 md:ml-[-10px] top-1 w-5 h-5 bg-slate-200 rounded-full border-4 border-white shadow-sm z-10">
+                    </div>
+                    <div class="md:w-1/2"></div>
+                </div>
+
+                <!-- Exp 4 -->
+                <div class="relative flex flex-col md:flex-row-reverse gap-8">
+                    <div class="md:w-1/2">
+                        <div class="md:pl-12">
+                            <span class="text-slate-400 font-poppins font-bold tracking-widest text-lg italic">SYSTEM
+                                SPECIALIST</span>
+                            <h3 class="text-2xl font-bold mt-2 text-slate-800">한진정보통신 (대한항공 정보시스템실)</h3>
+                            <p class="text-slate-600 text-sm leading-relaxed mt-4 text-slate-500">항공 수입관리 시스템 개발 및 유지보수
+                                주임 연구원. 전 세계 운항 데이터 기반의 대규모 트랜잭션 처리 알고리즘 최적화 및 아키텍처 고도화 수행.</p>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute left-[-9px] md:left-1/2 md:ml-[-10px] top-1 w-5 h-5 bg-slate-200 rounded-full border-4 border-white shadow-sm z-10">
+                    </div>
+                    <div class="md:w-1/2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-white py-24 px-6 border-t border-slate-100">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-slate-900 leading-tight tracking-tight">이론은 명쾌하게, 실무는
+                강력하게.<br>가치 있는 AI 교육의 파트너가 되어 드립니다.</h2>
+            <div class="flex flex-col md:flex-row justify-center gap-12 text-left max-w-2xl mx-auto">
+                <div class="flex items-center gap-5">
+                    <div
+                        class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest font-poppins">Email
+                            Address</div>
+                        <div class="text-slate-800 font-bold">jeongho_jeon@naver.com</div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-5">
+                    <div
+                        class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <div class="text-[10px] text-slate-400 font-bold uppercase tracking-widest font-poppins">Phone
+                            Number</div>
+                        <div class="text-slate-800 font-bold">010-9123-0311</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-slate-100 text-slate-400 text-[10px] font-poppins">&copy; 2025 JEONGHO
+                JEON. All Rights Reserved. <br> Mathematics (B.S.) & Strategic Global MBA Insight.</div>
+        </div>
+    </footer>
+</body>
+
+</html>
